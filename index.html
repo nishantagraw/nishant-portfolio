@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant Agrawal - Web Developer | Modern Digital Solutions</title>
+    <meta name="description" content="Professional web developer Nishant Agrawal specializing in custom web development, e-commerce solutions, and high-performance digital platforms.">
+    <meta name="author" content="Nishant Agrawal">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="nav-logo">
+                Nishant Agrawal
+            </a>
+            <div class="nav-links" id="navLinks">
+                <button class="nav-link active" data-section="home">Home</button>
+                <button class="nav-link" data-section="about">About</button>
+                <button class="nav-link" data-section="services">Services</button>
+                <button class="nav-link" data-section="portfolio">Portfolio</button>
+                <button class="nav-link" data-section="contact">Contact</button>
+            </div>
+            <div class="nav-right">
+                <a href="https://wa.me/917467845015" target="_blank" class="nav-cta">
+                    <i class="fab fa-whatsapp"></i> Hire Me
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <button class="nav-link" data-section="home">Home</button>
+        <button class="nav-link" data-section="about">About</button>
+        <button class="nav-link" data-section="services">Services</button>
+        <button class="nav-link" data-section="portfolio">Portfolio</button>
+        <button class="nav-link" data-section="contact">Contact</button>
+        <a href="https://wa.me/917467845015" target="_blank" class="mobile-wa-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp Me
+        </a>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <!-- Canvas Starfield -->
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+        <!-- Floating Background Tech Icons (Left & Right Sides) -->
+        <div class="floating-icons">
+            <!-- Left Side Icons -->
+            <i class="fab fa-wordpress floating-icon" style="top:15%;left:3%;animation-delay:0s;" title="WordPress"></i>
+            <i class="fab fa-html5 floating-icon" style="top:38%;left:4%;animation-delay:0.8s;" title="HTML5"></i>
+            <i class="fab fa-js floating-icon" style="top:62%;left:3%;animation-delay:1.6s;" title="JavaScript"></i>
+            <i class="fab fa-react floating-icon" style="top:82%;left:5%;animation-delay:2.4s;" title="React.js"></i>
+            <i class="fab fa-python floating-icon" style="top:50%;left:7%;animation-delay:3.2s;" title="Python"></i>
+
+            <!-- Right Side Icons -->
+            <i class="fab fa-shopify floating-icon" style="top:15%;right:3%;animation-delay:1.2s;" title="Shopify"></i>
+            <i class="fab fa-css3-alt floating-icon" style="top:38%;right:4%;animation-delay:2s;" title="CSS3"></i>
+            <i class="fab fa-php floating-icon" style="top:62%;right:3%;animation-delay:0.4s;" title="PHP"></i>
+            <i class="fas fa-robot floating-icon" style="top:82%;right:5%;animation-delay:2.8s;" title="AI Automation"></i>
+            <i class="fas fa-database floating-icon" style="top:50%;right:7%;animation-delay:3.6s;" title="Database"></i>
+        </div>
+
+        <div class="container hero-wrapper">
+            <!-- Available badge -->
+            <div class="available-badge animate-fade-in">
+                <div class="pulse-dot"></div>
+                <span>Available for opportunities</span>
+            </div>
+
+            <!-- Big Name Heading -->
+            <h1 class="hero-title animate-fade-in">
+                HI, I'M <span class="hero-accent">NISHANT</span>
+            </h1>
+
+            <!-- Centerpiece Avatar Circle with Glow & Badges (WordPress, Shopify, E-Commerce) -->
+            <div class="hero-avatar-container animate-fade-in" style="animation-delay:0.15s">
+                <div class="hero-photo-wrap">
+                    <div class="photo-glow"></div>
+                    <div class="photo-ring"></div>
+                    <div class="photo-circle">
+                        <span class="photo-initials">NA</span>
+                    </div>
+
+                    <!-- Floating Badges around Circle -->
+                    <div class="float-badge float-badge--top-left">
+                        <span>WORDPRESS</span>
+                    </div>
+                    <div class="float-badge float-badge--mid-left">
+                        <span>SHOPIFY</span>
+                    </div>
+                    <div class="float-badge float-badge--bottom-right">
+                        <span>E-COMMERCE</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Typing Subtitle -->
+            <h2 class="hero-subtitle animate-fade-in" style="animation-delay:0.25s">
+                <span id="typingText">Web Developer & E-Commerce Specialist</span><span class="typing-cursor">|</span>
+            </h2>
+            
+            <!-- Description -->
+            <p class="hero-desc animate-fade-in" style="animation-delay:0.35s">
+                I craft immersive digital experiences and high-converting e-commerce stores with cutting-edge tools and a passion for seamless interaction design.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-buttons animate-fade-in" style="animation-delay:0.45s">
+                <button class="btn-solid" data-section="portfolio">
+                    EXPLORE PROJECTS
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="https://wa.me/917467845015" target="_blank" class="btn-ghost">
+                    LET'S COLLABORATE
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials animate-fade-in" style="animation-delay:0.55s">
+                <a href="https://mail.google.com/mail/?view=cm&to=nishantagrawalqwe@gmail.com" target="_blank" class="hero-social-btn" title="Email Me">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/917467845015" target="_blank" class="hero-social-btn" title="WhatsApp Me">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://infiniteclub.tech" target="_blank" class="hero-social-btn" title="Agency Website">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-heading">
+                <div class="line-mask animate-in-view">
+                    <span class="mask-word">About</span>
+                    <span class="mask-word">Me</span>
+                </div>
+                <p class="section-sub">A passionate web developer with a fresh perspective and strong technical foundation, ready to bring innovative solutions to your projects.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="line-mask animate-in-view">
+                        <span class="mask-word">My</span>
+                        <span class="mask-word">Journey</span>
+                    </div>
+                    <div class="about-paragraphs">
+                        <p>I started building websites out of pure passion for technology and design. Over the years, I've developed and launched multiple live digital platforms — spanning farm-fresh Himalayan e-commerce stores, B2B diamond sourcing portals, practical digital skills learning platforms, music streaming networks, and AI chatbot automation suites.</p>
+                        <p>I manage the entire digital lifecycle from end to end: architecture, frontend development, WooCommerce & Shopify backend integration, SEO ranking, and Google/Meta performance advertising. My focus is always on building experiences that convert visitors into loyal clients.</p>
+                        <p>My philosophy is simple: understand the core business objective, engineer clean and scalable code, and ensure a flawless user experience across every screen size.</p>
+                    </div>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-code"></i></div>
+                        <div class="info-content">
+                            <h4>Full-Stack Development</h4>
+                            <p>Modern web applications built with HTML5, CSS3, JavaScript, PHP, React & Node.js.</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="info-content">
+                            <h4>E-Commerce Specialist</h4>
+                            <p>WooCommerce & Shopify stores with automated payment gateways and inventory systems.</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="info-content">
+                            <h4>Marketing & SEO Growth</h4>
+                            <p>Targeted Google Ads, Meta ad campaigns, and on-page SEO strategies that drive conversions.</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="info-content">
+                            <h4>End-to-End Delivery</h4>
+                            <p>From initial design mockup to live deployment, SSL configuration, and domain management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills pills -->
+            <div class="skills-box">
+                <h3>Technical Skills & Expertise</h3>
+                <div class="skills-pills">
+                    <div class="pill">HTML5</div>
+                    <div class="pill">CSS3</div>
+                    <div class="pill">JavaScript (ES6+)</div>
+                    <div class="pill">PHP</div>
+                    <div class="pill">React.js</div>
+                    <div class="pill">Node.js</div>
+                    <div class="pill">WordPress</div>
+                    <div class="pill">WooCommerce</div>
+                    <div class="pill">Shopify</div>
+                    <div class="pill">Tailwind CSS</div>
+                    <div class="pill">REST APIs</div>
+                    <div class="pill">SEO Optimization</div>
+                    <div class="pill">Google Ads</div>
+                    <div class="pill">Meta Ads</div>
+                    <div class="pill">Git & GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-heading">
+                <div class="line-mask animate-in-view">
+                    <span class="mask-word">My</span>
+                    <span class="mask-word">Services</span>
+                </div>
+                <p class="section-sub">Delivering professional web development solutions with modern technologies and best practices</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-blob-bg"></div>
+                    <div class="service-inner">
+                        <div class="service-icon-wrap"><i class="fas fa-code"></i></div>
+                        <h3>Custom Web Development</h3>
+                        <p>Hand-coded, lightning-fast responsive websites built with clean HTML5, CSS3, and JavaScript architecture.</p>
+                        <ul>
+                            <li><span class="dot"></span>Custom Frontend Engineering</li>
+                            <li><span class="dot"></span>Pixel-Perfect Responsive Layouts</li>
+                            <li><span class="dot"></span>Speed & Performance Tuning</li>
+                            <li><span class="dot"></span>Cross-Browser Compatibility</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-blob-bg"></div>
+                    <div class="service-inner">
+                        <div class="service-icon-wrap"><i class="fas fa-shopping-bag"></i></div>
+                        <h3>E-Commerce Stores</h3>
+                        <p>High-converting online stores built on WooCommerce and Shopify with seamless payment and order tracking.</p>
+                        <ul>
+                            <li><span class="dot"></span>WooCommerce & Shopify Stores</li>
+                            <li><span class="dot"></span>Secure Payment Gateway Setup</li>
+                            <li><span class="dot"></span>Automated Inventory & Shipping</li>
+                            <li><span class="dot"></span>Optimized Checkout Funnels</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-blob-bg"></div>
+                    <div class="service-inner">
+                        <div class="service-icon-wrap"><i class="fab fa-wordpress"></i></div>
+                        <h3>WordPress Solutions</h3>
+                        <p>Full-scale WordPress development including custom themes, plugin configuration, and ongoing site maintenance.</p>
+                        <ul>
+                            <li><span class="dot"></span>Custom WordPress Themes</li>
+                            <li><span class="dot"></span>Plugin Integration & Setup</li>
+                            <li><span class="dot"></span>Security & Speed Optimization</li>
+                            <li><span class="dot"></span>Reliable Website Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-blob-bg"></div>
+                    <div class="service-inner">
+                        <div class="service-icon-wrap"><i class="fas fa-robot"></i></div>
+                        <h3>AI & Automation Setup</h3>
+                        <p>Integration of intelligent AI chatbots and automation workflows to capture leads and assist customers 24/7.</p>
+                        <ul>
+                            <li><span class="dot"></span>AI Customer Support Bots</li>
+                            <li><span class="dot"></span>Lead Generation Workflows</li>
+                            <li><span class="dot"></span>API Webhook Integrations</li>
+                            <li><span class="dot"></span>CRM & Email Syncing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-blob-bg"></div>
+                    <div class="service-inner">
+                        <div class="service-icon-wrap"><i class="fas fa-bullhorn"></i></div>
+                        <h3>SEO & Paid Advertising</h3>
+                        <p>Comprehensive digital growth strategies including targeted Google Ads, Meta campaigns, and high-ranking SEO.</p>
+                        <ul>
+                            <li><span class="dot"></span>Google Search & Display Ads</li>
+                            <li><span class="dot"></span>Meta / Facebook Ad Campaigns</li>
+                            <li><span class="dot"></span>Technical & On-Page SEO</li>
+                            <li><span class="dot"></span>Conversion Rate Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-blob-bg"></div>
+                    <div class="service-inner">
+                        <div class="service-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Responsive UI/UX Design</h3>
+                        <p>Modern user interface design that feels intuitive, engaging, and flawless across phones, tablets, and desktops.</p>
+                        <ul>
+                            <li><span class="dot"></span>Mobile-First UI Architecture</li>
+                            <li><span class="dot"></span>Touch-Friendly Interactions</li>
+                            <li><span class="dot"></span>Modern Dark Theme Aesthetics</li>
+                            <li><span class="dot"></span>Interactive Visual Motion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services CTA Box -->
+            <div class="services-cta-box">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Let's collaborate to bring your vision to life with modern web technologies and proven growth strategies</p>
+                <div class="cta-stats-row">
+                    <div class="cta-stat">
+                        <div class="cta-stat-label">Professional Execution</div>
+                        <div class="cta-stat-value">Clear & Agile Process</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="cta-stat-label">Modern Stack</div>
+                        <div class="cta-stat-value">React, WordPress & Shopify</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="cta-stat-label">Results Focused</div>
+                        <div class="cta-stat-value">High Conversion Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION (CLEAN FULL-BLEED ANGLED CAROUSEL) ===== -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-heading">
+                <div class="line-mask animate-in-view">
+                    <span class="mask-word">Featured</span>
+                    <span class="mask-word">Projects</span>
+                </div>
+                <p class="section-sub">Interactive showcase of live, production websites I've engineered and launched</p>
+            </div>
+        </div>
+
+        <!-- Clean Full-Bleed Angled Carousel -->
+        <div class="angled-carousel" id="carousel">
+            
+            <!-- Card 0: Mera Bageecha -->
+            <div class="angled-carousel__card" data-index="0">
+                <div class="card-iframe-wrap">
+                    <iframe src="https://merabageecha.in/" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">E-Commerce</span>
+                        <h3>Mera Bageecha</h3>
+                        <p>Himalayan Organic Fruits Store</p>
+                        <a href="https://merabageecha.in/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 1: PupHub Store -->
+            <div class="angled-carousel__card" data-index="1">
+                <div class="card-iframe-wrap">
+                    <iframe src="https://puphub.store/" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">Pet Store</span>
+                        <h3>PupHub Store</h3>
+                        <p>D2C Pet Products & Accessories</p>
+                        <a href="https://puphub.store/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: RevoMusic -->
+            <div class="angled-carousel__card" data-index="2">
+                <div class="card-iframe-wrap">
+                    <iframe src="https://revomusic.in/" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">Music Platform</span>
+                        <h3>RevoMusic</h3>
+                        <p>Artist Distribution & Streaming</p>
+                        <a href="https://revomusic.in/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Aibotick -->
+            <div class="angled-carousel__card" data-index="3">
+                <div class="card-iframe-wrap card-iframe-wrap--img">
+                    <img src="https://api.microlink.io/?url=https%3A%2F%2Faibotick.com&screenshot=true&meta=false&embed=screenshot.url" alt="Aibotick" loading="lazy">
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">AI Solutions</span>
+                        <h3>Aibotick</h3>
+                        <p>Customer Support Chatbots & Workflows</p>
+                        <a href="https://aibotick.com/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Skill Rise Digital -->
+            <div class="angled-carousel__card" data-index="4">
+                <div class="card-iframe-wrap">
+                    <iframe src="https://skillrisedigital.online/" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">EdTech</span>
+                        <h3>Skill Rise Digital</h3>
+                        <p>Practical Digital Skills Courses & Learning Platform</p>
+                        <a href="https://skillrisedigital.online/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: DiamondDesk -->
+            <div class="angled-carousel__card" data-index="5">
+                <div class="card-iframe-wrap">
+                    <iframe src="https://diamonddesk.in/" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">B2B Platform</span>
+                        <h3>DiamondDesk</h3>
+                        <p>Certified Diamonds & Gemstone Sourcing Portal</p>
+                        <a href="https://diamonddesk.in/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Infinite Club -->
+            <div class="angled-carousel__card" data-index="6">
+                <div class="card-iframe-wrap">
+                    <iframe src="https://infiniteclub.tech/" loading="lazy" sandbox="allow-same-origin allow-scripts"></iframe>
+                </div>
+                <!-- Details shown on hover / arrow (No blur) -->
+                <div class="angled-carousel__card-overlay">
+                    <div class="overlay-content">
+                        <span class="overlay-badge">Agency</span>
+                        <h3>Infinite Club</h3>
+                        <p>Digital Development & Growth Agency</p>
+                        <a href="https://infiniteclub.tech/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="angled-carousel__nav angled-carousel__nav--left" id="carouselPrev" aria-label="Previous project"><i class="fas fa-chevron-left"></i></div>
+            <div class="angled-carousel__nav angled-carousel__nav--right" id="carouselNext" aria-label="Next project"><i class="fas fa-chevron-right"></i></div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+        <div class="container">
+            <!-- Portfolio Stats Banner -->
+            <div class="portfolio-stats-box">
+                <h3>Engineering Standards</h3>
+                <p>Every web project is developed with rigorous attention to speed, aesthetics, and conversions</p>
+                <div class="portfolio-stats-row">
+                    <div class="p-stat">
+                        <div class="p-stat-val">100%</div>
+                        <div class="p-stat-lbl">Mobile Responsive</div>
+                    </div>
+                    <div class="p-stat">
+                        <div class="p-stat-val"><i class="fas fa-bolt" style="color:var(--primary)"></i> Ultra</div>
+                        <div class="p-stat-lbl">Fast Performance</div>
+                    </div>
+                    <div class="p-stat">
+                        <div class="p-stat-val">Clean</div>
+                        <div class="p-stat-lbl">Maintainable Code</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-heading">
+                <div class="line-mask animate-in-view">
+                    <span class="mask-word">Get</span>
+                    <span class="mask-word">In</span>
+                    <span class="mask-word">Touch</span>
+                </div>
+                <p class="section-sub">Ready to start your next project? Let's discuss how I can help bring your ideas to life.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Form -->
+                <div class="contact-form-card">
+                    <h3>Send Me a Message</h3>
+                    <p>I'd love to hear about your project. Fill out the form and I'll get back to you promptly.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="What's this project about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="4" placeholder="Tell me about your requirements, timeline, and goals..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info & CTA -->
+                <div class="contact-info-col">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <a href="mailto:nishantagrawalqwe@gmail.com" class="contact-item contact-item--link">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="ci-label">Email</div>
+                                <span>nishantagrawalqwe@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://wa.me/917467845015" target="_blank" class="contact-item contact-item--link">
+                            <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <div class="ci-label">WhatsApp</div>
+                                <span>+91 7467845015</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://infiniteclub.tech" target="_blank" class="contact-item contact-item--link">
+                            <div class="contact-item-icon"><i class="fas fa-globe"></i></div>
+                            <div>
+                                <div class="ci-label">Agency Website</div>
+                                <span>infiniteclub.tech</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="ci-label">Location</div>
+                                <span>India • Global Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom CTA Card -->
+                    <div class="contact-cta-card">
+                        <h3>Let's Build Something Amazing</h3>
+                        <p>Whether you need a new website, a custom WooCommerce store, or performance marketing optimization.</p>
+                        <div class="mini-stats">
+                            <div><strong>Quick Response</strong><span>Within 24 hours</span></div>
+                            <div><strong>Free Consultation</strong><span>Direct Discussion</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-text">© 2026 Nishant Agrawal. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://mail.google.com/mail/?view=cm&to=nishantagrawalqwe@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/917467845015" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://infiniteclub.tech" target="_blank" title="Website"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        <span class="scroll-top-ping"></span>
+    </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
