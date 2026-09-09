@@ -1,7 +1,0 @@
-Vercel CLI 59.13.1 (Node.js 24.11.1)
-WARNING! The following arguments are deprecated: nishantagrawalqwe@gmail.com
-Read more in our changelog (https://vercel.com/changelog/new-vercel-cli-login-flow).
-> 
-  Visit https://vercel.com/oauth/device?user_code=MVTB-RKWW
-
-Waiting for authentication...
